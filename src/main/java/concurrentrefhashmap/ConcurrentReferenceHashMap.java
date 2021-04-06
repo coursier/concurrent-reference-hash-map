@@ -2041,7 +2041,7 @@ public class ConcurrentReferenceHashMap<K, V> extends AbstractMap<K, V>
      * @return the argument that was tested.
      * @throws java.lang.NullPointerException if argument is null
      */
-    public static <T> T checkNotNull(T argument) {
+    private static <T> T checkNotNull(T argument) {
         if (argument == null) {
             throw new NullPointerException();
         }
