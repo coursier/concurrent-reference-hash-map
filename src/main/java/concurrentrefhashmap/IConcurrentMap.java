@@ -42,7 +42,7 @@ public interface IConcurrentMap<K, V> extends java.util.concurrent.ConcurrentMap
      * @throws UnsupportedOperationException {@inheritDoc}
      * @throws ClassCastException            {@inheritDoc}
      * @throws NullPointerException          {@inheritDoc}
-     * @implSpec The default implementation is equivalent to the following steps for this
+     * The default implementation is equivalent to the following steps for this
      * {@code map}, then returning the current value or {@code null} if now
      * absent:
      *
@@ -71,7 +71,7 @@ public interface IConcurrentMap<K, V> extends java.util.concurrent.ConcurrentMap
      * @throws UnsupportedOperationException {@inheritDoc}
      * @throws ClassCastException            {@inheritDoc}
      * @throws NullPointerException          {@inheritDoc}
-     * @implSpec The default implementation is equivalent to performing the following
+     * The default implementation is equivalent to performing the following
      * steps for this {@code map}, then returning the current value or
      * {@code null} if now absent. :
      *
@@ -101,7 +101,6 @@ public interface IConcurrentMap<K, V> extends java.util.concurrent.ConcurrentMap
     /**
      * {@inheritDoc}
      *
-     * @implSpec
      * The default implementation is equivalent to performing the following
      * steps for this {@code map}, then returning the current value or
      * {@code null} if absent:
