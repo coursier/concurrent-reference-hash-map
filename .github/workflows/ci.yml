@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: coursier/cache-action@v5
+    - uses: coursier/cache-action@v6
     - uses: laughedelic/coursier-setup@v1
       with:
-        jvm: 11
+        jvm: 8
         apps: sbt-launcher
     - name: Compile
       run: sbt compile publishLocal
@@ -26,12 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: coursier/cache-action@v5
+    - uses: coursier/cache-action@v6
     - uses: laughedelic/coursier-setup@v1
       with:
-        jvm: 11
+        jvm: 8
         apps: sbt-launcher
-    - uses: olafurpg/setup-gpg@v2
+    - run: .github/scripts/gpg-setup.sh
+      shell: bash
+      env:
+        PGP_SECRET: ${{ secrets.PGP_SECRET }}
     - name: Release
       run: sbt ci-release
       env:
