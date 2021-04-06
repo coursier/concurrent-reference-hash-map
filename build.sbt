@@ -2,7 +2,7 @@
 inThisBuild(List(
   organization := "io.github.alexarchambault",
   homepage := Some(url("https://github.com/alexarchambault/concurrent-reference-hash-map")),
-  licenses := List("GNU LGPL 2.1" -> url("https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html")),
+  licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
   developers := List(
     Developer(
       "alexarchambault",
