@@ -5,7 +5,7 @@
 
 `ConcurrentReferenceHashMap` from [hazelcast](https://github.com/hazelcast/hazelcast/blob/bacfd050453824df221393be89b847beeec50ce0/hazelcast/src/main/java/com/hazelcast/internal/util/ConcurrentReferenceHashMap.java)
 re-packaged as a single dependency-free JAR. Released under the same license
-as the original hibernate code: Apache 2.
+as the original hazelcast code: Apache 2.
 
 ## Usage
 
