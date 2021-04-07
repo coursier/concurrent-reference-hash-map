@@ -10,7 +10,7 @@ as the original hazelcast code: Apache 2.
 ## Usage
 
 ```scala
-libraryDependencies += "io.github.alexarchambault" % "concurrent-reference-hash-map" % "1.0.0"
+libraryDependencies += "io.github.alexarchambault" % "concurrent-reference-hash-map" % "1.1.0"
 ```
 
 The latest version is [![Maven Central](https://img.shields.io/maven-central/v/io.github.alexarchambault/concurrent-reference-hash-map.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.alexarchambault/concurrent-reference-hash-map).
